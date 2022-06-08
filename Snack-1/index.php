@@ -3,7 +3,7 @@ Creiamo un array contenente le partite di basket di un’ipotetica tappa del cal
 Olimpia Milano - Cantù | 55-60 -->
 
 <?php
-$match = [
+$games = [
     [
         "squadra_casa" => "Milano",
         "squadra_ospite" => "Cantù",
@@ -49,14 +49,15 @@ $match = [
 
 <body>
     <?php
-    for ($i = 0; $i < count($match); $i++) {
+    for ($i = 0; $i < count($games); $i++) {
+        $this_match = $games[$i];
     ?>
         <h3>Partita <?php echo $i + 1 ?></h3>
         <p>
             <?php
-            echo $match[$i]["squadra_casa"] . " - " . $match[$i]["squadra_ospite"] .
+            echo $this_match["squadra_casa"] . " - " . $this_match["squadra_ospite"] .
             " | ".
-            $match[$i]["punti_casa"] . "-" . $match[$i]["punti_ospite"] ?>
+            $this_match["punti_casa"] . "-" . $this_match["punti_ospite"] ?>
         </p>
     <?php } ?>
 </body>
