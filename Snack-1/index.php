@@ -57,7 +57,7 @@ $games = [
             <?php
             echo $this_match["squadra_casa"] . " - " . $this_match["squadra_ospite"] .
             " | ".
-            $this_match["punti_casa"] . "-" . $this_match["punti_ospite"] ?>
+            $this_match["punti_casa"] . "-" . $this_match["punti_ospite"]; ?>
         </p>
     <?php } ?>
 </body>
